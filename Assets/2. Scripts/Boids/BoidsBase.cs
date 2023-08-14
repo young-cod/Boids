@@ -17,7 +17,7 @@ public class BoidsBase : MonoBehaviour
 
     public Vector3 velocity;
     //[SerializeField]
-    protected float speed = 10f;
+    protected float speed = 30f;
     protected float rotSpeed = 10f;
     protected float accelSpeed;
     protected float findDis = 10f;

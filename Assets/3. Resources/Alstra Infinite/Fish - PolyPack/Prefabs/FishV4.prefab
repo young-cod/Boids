@@ -98,7 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 4
   velocity: {x: 0, y: 0, z: 0}
-  speed: 3
   alignmentWeight: 1
   cohesionWeight: 1
   separationWeight: 1

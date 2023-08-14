@@ -11,7 +11,7 @@ public class Boids3D : BoidsBase
         aiMoveCoroutine = StartCoroutine("AIMoveCo");
     }
 
-    WaitForSeconds wait = new WaitForSeconds(20f);
+    WaitForSeconds wait = new WaitForSeconds(60f);
     IEnumerator FindNeighbourCo(float val)
     {
         neighbours.Clear();
@@ -57,8 +57,10 @@ public class Boids3D : BoidsBase
 
     IEnumerator AIMoveCo()
     {
-        speed = Random.Range(3, 10);
-        aiVec = Random.insideUnitSphere;
+        speed = Random.Range(10, 15);
+
+        if (neighbours.Count == 0)
+            aiVec = Random.insideUnitSphere;
 
         yield return new WaitForSeconds(10f);
 
@@ -68,7 +70,7 @@ public class Boids3D : BoidsBase
 
     Vector3 CalcAlignmentVec()
     {
-        Vector3 vec = Vector3.forward;
+        Vector3 vec = Vector3.zero;
 
         if (neighbours.Count > 0)
         {

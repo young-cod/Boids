@@ -33,6 +33,8 @@ public class BoidsSpawner : MonoBehaviour
             }
             go.transform.SetParent(transform);
         }
+        ControlVectorWeight(alignmentWeight, cohesionWeight, separationWeight, boundaryWeight);
+
     }
 
 

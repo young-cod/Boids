@@ -337,11 +337,11 @@ MonoBehaviour:
   - {fileID: 159700, guid: 4111a63ec6a85c744a305e1dfd0869f9, type: 3}
   - {fileID: 159700, guid: 4111a63ec6a85c744a305e1dfd0869f9, type: 3}
   neighbours: []
-  createCount: 500
-  radius: 50
+  createCount: 1000
+  radius: 100
   alignmentWeight: 1
   cohesionWeight: 3
-  separationWeight: 2
+  separationWeight: 3
   boundaryWeight: 5
 --- !u!4 &1537736926
 Transform:
